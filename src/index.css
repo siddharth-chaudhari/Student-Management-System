@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* dark form controls — place after Tailwind imports */
+:root {
+  --form-bg: rgba(255,255,255,0.04); /* glass */
+  --form-border: rgba(255,255,255,0.06);
+  --form-placeholder: rgba(255,255,255,0.6);
+  --form-text: #ffffff;
+}
+
+/* apply to usual form controls */
+input, textarea, select, .form-control {
+  background-color: var(--form-bg) !important;
+  border: 1px solid var(--form-border) !important;
+  color: var(--form-text) !important;
+  outline: none;
+  -webkit-text-fill-color: var(--form-text) !important; /* fixes Chrome autofill text color */
+}
+
+/* placeholder color */
+input::placeholder, textarea::placeholder {
+  color: var(--form-placeholder) !important;
+}
+
+/* focus ring (subtle) */
+input:focus, textarea:focus, select:focus {
+  box-shadow: 0 0 0 4px rgba(99,102,241,0.08);
+  border-color: rgba(99,102,241,0.9);
+}
+
+/* Fix Chrome autofill background */
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px var(--form-bg) inset !important;
+  box-shadow: 0 0 0 1000px var(--form-bg) inset !important;
+  -webkit-text-fill-color: var(--form-text) !important;
+}
