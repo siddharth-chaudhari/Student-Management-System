@@ -3,7 +3,7 @@
 A scalable role-based student management system built with React, Vite, and Tailwind CSS.
 
 ## 🚀 Live Demo
-[View Live Demo](https://your-netlify-url.netlify.app)
+[View Live Demo](student-management-system-psi-tawny.vercel.app)
 
 ## ✨ Features
 
@@ -120,7 +120,7 @@ Deployed on Netlify with automatic builds from GitHub.
 
 ## 👨‍💻 Author
 
-Your Name - [GitHub](https://github.com/YOUR_USERNAME)
+Siddharth Chaudhari - [GitHub](https://github.com/siddharth-chaudhari)
 
 ## 📄 License
 
